@@ -1,0 +1,151 @@
+body {
+    margin: 46px 24px 0 24px;
+}
+
+h1,
+.gmui-large-title {
+    margin: 12px;
+}
+
+/* color */
+
+.gmui-view-color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.gmui-view-color-box .gmui-view-color-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 21px 0;
+}
+
+.gmui-view-color-box .gmui-view-color-item .gmui-view-color-item-card {
+    width: 160px;
+    height: 160px;
+    padding: 2px 9px 2px 9px;
+    position: relative;
+}
+
+.gmui-view-color-item-card top {
+    position: absolute;
+    top: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.gmui-view-color-item-card bottom {
+    position: absolute;
+    bottom: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.gmui-view-color-item-card bottom p {
+    text-transform: lowercase;
+    margin-bottom: 8px;
+}
+
+/* typography */
+
+.gmui-view-typo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 12px 0;
+}
+
+.gmui-view-typo-box .gmui-typo-large-title {
+    width: 100%;
+    margin-left: 42px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #323945;
+}
+
+.gmui-view-typo-box .gmui-view-typo-item {
+    width: 86%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.gmui-view-typo-box .gmui-view-typo-item .gmui-view-typo-item-fontsize-view {
+    width: 248px;
+    color: #303030;
+}
+
+.gmui-view-typo-box .gmui-view-typo-item .gmui-view-typo-item-size,
+.gmui-view-typo-item-fontsize {
+    font-size: 16px;
+    color: #3F4756;
+    font-weight: 400;
+}
+
+.gmui-view-avatars-box {
+    display: flex;
+}
+
+.gmui-view-avatars-box .gmui-avatars-item {
+    margin: 12px;
+}
+
+.gmui-view-avatars-box .gmui-avatars-groups {
+    margin: 12px 0;
+}
+
+.gmui-view-avatars-box .gmui-avatars-groups .gmui-avatars-item {
+    margin: 0;
+}
+
+.gmui-view-tag_badges-box {
+    margin: 24px;
+}
+
+.gmui-view-tag_badges-box .gmui-tag_badges-item {
+    margin: 8px;
+}
+
+.gmui-view-tag_badges-button {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    position: relative;
+}
+
+.gmui-view-breadcrumb-box .gmui-breadcrumb {
+    margin: 12px 0;
+}
+
+.gmui-view-button-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gmui-view-button-item .gmui-button {
+    margin: 24px 6px;
+}
+
+.gmui-button-br-fill-icon {
+    fill: #3F4756;
+    transition: 0.3s all;
+}

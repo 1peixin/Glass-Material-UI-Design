@@ -1,0 +1,406 @@
+.gmui-button {
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s all;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.gmui-button:hover {
+    background: #F5F5F5;
+}
+
+.gmui-button:active {
+    background: rgba(245, 245, 245, 0.46);
+}
+
+.gmui-button-unsetbg-dark {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gmui-button-unsetbg-dark:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gmui-button-unsetbg-dark:active {
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gmui-button-unsetbg-primary {
+    background: transparent;
+}
+
+.gmui-button-unsetbg-primary:hover {
+    background: rgba(204, 229, 255, 0.52);
+    color: #0063CC;
+}
+
+.gmui-button-unsetbg-primary:active {
+    background: rgba(204, 229, 255, 0.24);
+    color: #007CFF;
+}
+
+.gmui-button-unsetbg-primary-2 {
+    background: transparent;
+}
+
+.gmui-button-unsetbg-primary-2:hover {
+    background: rgba(229, 230, 254, 0.52);
+    color: #636ACA;
+}
+
+.gmui-button-unsetbg-primary-2:active {
+    background: rgba(229, 230, 254, 0.24);
+    color: #7C84FC;
+}
+
+.gmui-button-unsetbg-info {
+    background: transparent;
+}
+
+.gmui-button-unsetbg-info:hover {
+    background: rgba(204, 246, 244, 0.52);
+    color: #00A89E;
+}
+
+.gmui-button-unsetbg-info:active {
+    background: rgba(204, 246, 244, 0.24);
+    color: #00D2C6;
+}
+
+.gmui-button-unsetbg-success {
+    background: transparent;
+}
+
+.gmui-button-unsetbg-success:hover {
+    background: rgba(204, 248, 224, 0.52);
+    color: #00AF52;
+}
+
+.gmui-button-unsetbg-success:active {
+    background: rgba(204, 248, 224, 0.24);
+    color: #00DB66;
+}
+
+.gmui-button-unsetbg-warning {
+    background: transparent;
+}
+
+.gmui-button-unsetbg-warning:hover {
+    background: rgba(255, 242, 204, 0.52);
+    color: #CC9700;
+}
+
+.gmui-button-unsetbg-warning:active {
+    background: rgba(255, 242, 204, 0.24);
+    color: #FFBD00;
+}
+
+.gmui-button-unsetbg-danger {
+    background: transparent;
+}
+
+.gmui-button-unsetbg-danger:hover {
+    background: rgba(255, 220, 220, 0.52);
+    color: #CC413F;
+}
+
+.gmui-button-unsetbg-danger:active {
+    background: rgba(255, 220, 220, 0.24);
+    color: #FF514F;
+}
+
+.gmui-button-shadow-style1 {
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.gmui-button-shadow-style1:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+.gmui-button-shadow-style1:active {
+    box-shadow: none;
+}
+
+.gmui-button-shadow-style2 {
+    box-shadow: none;
+}
+
+.gmui-button-shadow-style2:hover {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gmui-button-shadow-style2:active {
+    box-shadow: none;
+}
+
+.gmui-button svg,
+.gmui-button * {
+    margin-left: 6px;
+    transition: inherit;
+}
+
+.gmui-button *:first-child {
+    margin-left: 0;
+}
+
+.gmui-button *:last-child {
+    margin-right: 0;
+}
+
+.gmui-button-light {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.gmui-button-light:active {
+    color: #FFFFFF;
+    background: #c2c2c2;
+}
+
+.gmui-button-dark {
+    background: rgba(69, 69, 69, 0.64);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gmui-button-dark:hover {
+    background: rgba(89, 91, 94, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gmui-button-dark:active {
+    background: rgba(89, 91, 94, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gmui-button-primary {
+    background: #007CFF;
+    color: #FFFFFF;
+}
+
+.gmui-button-primary:hover {
+    background: #007CFF;
+    color: #FFFFFF;
+}
+
+.gmui-button-primary:active {
+    background: #2772c2;
+    color: #FFFFFF;
+}
+
+.gmui-button-primary-2 {
+    background: #7C84FC;
+    color: #FFFFFF;
+}
+
+.gmui-button-primary-2:hover {
+    background: #7C84FC;
+    color: #FFFFFF;
+}
+
+.gmui-button-primary-2:active {
+    background: #7277c0;
+    color: #FFFFFF;
+}
+
+.gmui-button-black {
+    background: #3F4756;
+    color: #FFFFFF;
+}
+
+.gmui-button-black:hover {
+    background: #3F4756;
+    color: #FFFFFF;
+}
+
+.gmui-button-black:active {
+    background: #4d525b;
+    color: #FFFFFF;
+}
+
+.gmui-button-info {
+    background: #00D2C6;
+    color: #FFFFFF;
+}
+
+.gmui-button-info:hover {
+    background: #00D2C6;
+    color: #FFFFFF;
+}
+
+.gmui-button-info:active {
+    background: #27a79f;
+    color: #FFFFFF;
+}
+
+.gmui-button-success {
+    background: #00DB66;
+    color: #FFFFFF;
+}
+
+.gmui-button-success:hover {
+    background: #00DB66;
+    color: #FFFFFF;
+}
+
+.gmui-button-success:active {
+    background: #27ac65;
+    color: #FFFFFF;
+}
+
+.gmui-button-warning {
+    background: #FFBD00;
+    color: #FFFFFF;
+}
+
+.gmui-button-warning:hover {
+    background: #FFBD00;
+    color: #FFFFFF;
+}
+
+.gmui-button-warning:active {
+    background: #c29a27;
+    color: #FFFFFF;
+}
+
+.gmui-button-danger {
+    background: #FF514F;
+    color: #FFFFFF;
+}
+
+.gmui-button-danger:hover {
+    background: #FF514F;
+    color: #FFFFFF;
+}
+
+.gmui-button-danger:active {
+    background: #c25857;
+    color: #FFFFFF;
+}
+
+.gmui-button[disabled] {
+    background: #d8d9db;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-light[disabled] {
+    background: #d8d9db;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-dark[disabled] {
+    background: #39393a;
+    color: rgba(255, 255, 255, 0.56);
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-primary[disabled] {
+    background: #96c4f5;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-primary-2[disabled] {
+    background: #c3c7f4;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-black[disabled] {
+    background: #adb1b8;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-info[disabled] {
+    background: #96e3e1;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-success[disabled] {
+    background: #96e6be;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-warning[disabled] {
+    background: #f2db99;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-danger[disabled] {
+    background: #f2b5b5;
+    color: #FFFFFF;
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.gmui-button-br-fill {
+    border-radius: 46px;
+    border: 2px solid #3F4756;
+    background: #FFFFFF;
+    color: #3F4756;
+    padding: 6px 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 0.3s all;
+}
+
+.gmui-button-br-fill:hover {
+    background: #FFFFFF;
+}
+
+.gmui-button-br-fill:active {
+    background: #3F4756;
+    color: #FFFFFF;
+}
+
+.gmui-button-br-fill:hover svg,
+i {
+    transform: translateX(6px);
+    transition: 0.3s all;
+}
+
+.gmui-button-br-fill:active .gmui-button-br-fill-icon {
+    fill: #fff;
+    transition: 0.3s all;
+}
+
+.gmui-button-br-fill svg,
+.gmui-button-br-fill i {
+    margin-left: 8px;
+    transition: inherit;
+}

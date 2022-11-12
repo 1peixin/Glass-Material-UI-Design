@@ -1,0 +1,51 @@
+.gmui-loading-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #fff;
+    z-index: 999;
+
+}
+
+.gmui-loading {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/logo-view_r.svg') no-repeat;
+    background-size: cover;
+}
+
+.gmui-loading-animation {
+    position: absolute;
+    top: 68%;
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+    background: url('../img/loading/loading_32px.svg') no-repeat;
+    background-size: cover;
+}
+
+.gmui-loading-progress-bar {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - 120px);
+    width: 240px;
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 120px;
+}
+
+.gmui-loading-progress-bar span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(104deg, rgba(255,81,79,0.92) 0%, rgba(255,189,0,0.82) 100%);
+    border-radius: inherit;
+}

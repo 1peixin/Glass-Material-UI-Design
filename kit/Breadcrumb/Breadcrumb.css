@@ -1,0 +1,52 @@
+.gmui-breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gmui-breadcrumb a,
+.gmui-breadcrumb span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.gmui-breadcrumb span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 350;
+}
+
+.gmui-breadcrumb a:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.56);
+    text-decoration: none;
+}
+
+.gmui-breadcrumb a::after {
+    content: "/";
+    margin-left: 8px;
+    color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.gmui-breadcrumb-pointer a::after {
+    content: "";
+    background-image: url("./images/pointer.svg");
+    width: 6px;
+    height: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.gmui-breadcrumb *:last-child::after {
+    content: none;
+}

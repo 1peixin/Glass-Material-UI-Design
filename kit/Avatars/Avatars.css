@@ -1,0 +1,109 @@
+.gmui-avatars-item {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    display: block;
+}
+
+.gmui-avatars-item .gmui-avatars {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+.gmui-avatars-item .gmui-avatars img,
+.gmui-avatars-item .gmui-avatars span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: inherit;
+}
+
+.gmui-avatars-item .gmui-avatars center {
+    position: absolute;
+    font-weight: 900;
+    font-family: "Microsoft YaHei", Arial, 'Noto Sans SC', sans-serif;
+    left: 0;
+    right: 0;
+    line-height: 36px;
+    font-style: normal;
+}
+
+.gmui-avatars-item span {
+    transition: all 0.24s;
+}
+
+.gmui-avatars-item .gmui-avatars-state-online,
+.gmui-avatars-item .gmui-avatars-state-online-busy,
+.gmui-avatars-item .gmui-avatars-state-offline {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.gmui-avatars-item .gmui-avatars-state-online::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #00DB66;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    transition: inherit;
+}
+
+.gmui-avatars-item .gmui-avatars-state-online-busy::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #ffbd00;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    transition: inherit;
+}
+
+.gmui-avatars-item .gmui-avatars-state-offline::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #D9DADD;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    transition: inherit;
+}
+
+.gmui-avatars-groups {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gmui-avatars-groups .gmui-avatars-item {
+    margin-left: -9px !important;
+}
+
+.gmui-avatars-groups .gmui-avatars-item:hover {
+    z-index: 1;
+}
+
+.gmui-avatars-groups .gmui-avatars-item i {
+    box-sizing: content-box;
+    border: 1px solid #FFFFFF;
+    display: block;
+}
+
+.gmui-avatars-groups .gmui-avatars-item:first-child {
+    margin-left: -6px !important;
+}
+
+.gmui-avatars-groups .gmui-avatars-item:last-child i {
+    border: none;
+}

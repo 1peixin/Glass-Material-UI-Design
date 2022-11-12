@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "SourceHanSans";
+    src: url("./fonts/SourceHanSans/SourceHanSans-ExtraLight.otf");
+    font-style: normal;
+    font-weight: 250;
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: url("./fonts/SourceHanSans/SourceHanSans-Light.otf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: url("./fonts/SourceHanSans/SourceHanSans-Normal.otf");
+    font-style: normal;
+    font-weight: 350;
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: url("./fonts/SourceHanSans/SourceHanSans-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: url("./fonts/SourceHanSans/SourceHanSans-Medium.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: url("./fonts/SourceHanSans/SourceHanSans-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: url("./fonts/SourceHanSans/SourceHanSans-Heavy.otf");
+    font-style: normal;
+    font-weight: 900;
+}

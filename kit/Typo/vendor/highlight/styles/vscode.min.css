@@ -1,0 +1,79 @@
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    font-family: inherit
+}
+
+code.hljs {
+    padding: 3px 5px
+}
+
+.hljs {
+    background: #fff;
+    color: #000;
+    font-family: inherit
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+    color: green;
+    font-family: inherit
+}
+
+.hljs-built_in,
+.hljs-keyword,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-tag {
+    color: #800000;
+    font-family: inherit
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-literal,
+.hljs-section,
+.hljs-string,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-title,
+.hljs-type {
+    color: #0000FF;
+    font-family: inherit
+}
+
+.hljs-deletion,
+.hljs-meta,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    color: #2b91af;
+    font-family: inherit
+}
+
+.hljs-doctag {
+    color: grey;
+    font-family: inherit
+}
+
+.hljs-attr {
+    color: #FF0000;
+    font-family: inherit
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-symbol {
+    color: #00b0e8;
+    font-family: inherit
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: 700;
+    font-family: inherit
+}

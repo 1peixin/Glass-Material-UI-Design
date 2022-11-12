@@ -1,0 +1,194 @@
+:root {
+    --primary-100: #CCE5FF;
+    --primary-500: #007CFF;
+    --primary-600: #0063CC;
+
+    --primary-2-100: #E5E6FE;
+    --primary-2-500: #7C84FC;
+    --primary-2-600: #636ACA;
+
+    --success-100: #CCF8E0;
+    --success-500: #00DB66;
+    --success-600: #00AF52;
+
+    --warning-100: #FFF2CC;
+    --warning-500: #FFBD00;
+    --warning-600: #CC9700;
+
+    --danger-100: #FFDCDC;
+    --danger-500: #FF514F;
+    --danger-600: #CC413F;
+
+    --info-100: #CCF6F4;
+    --info-500: #00D2C6;
+    --info-600: #00A89E;
+
+    --black-100: #D9DADD;
+    --black-500: #3F4756;
+    --black-600: #323945;
+    --black-700: #303030;
+}
+
+.gmui-background-primary-100 {
+    background-color: var(--primary-100);
+}
+
+.gmui-background-primary-500 {
+    background-color: var(--primary-500);
+}
+
+.gmui-background-primary-600 {
+    background-color: var(--primary-600);
+}
+
+.gmui-background-primary-2-100 {
+    background-color: var(--primary-2-100);
+}
+
+.gmui-background-primary-2-500 {
+    background-color: var(--primary-2-500);
+}
+
+.gmui-background-primary-2-600 {
+    background-color: var(--primary-2-600);
+}
+
+.gmui-background-success-100 {
+    background-color: var(--success-100);
+}
+
+.gmui-background-success-500 {
+    background-color: var(--success-500);
+}
+
+.gmui-background-success-600 {
+    background-color: var(--success-600);
+}
+
+.gmui-background-warning-100 {
+    background-color: var(--warning-100);
+}
+
+.gmui-background-warning-500 {
+    background-color: var(--warning-500);
+}
+
+.gmui-background-warning-600 {
+    background-color: var(--warning-600);
+}
+
+.gmui-background-danger-100 {
+    background-color: var(--danger-100);
+}
+
+.gmui-background-danger-500 {
+    background-color: var(--danger-500);
+}
+
+.gmui-background-danger-600 {
+    background-color: var(--danger-600);
+}
+
+.gmui-background-info-100 {
+    background-color: var(--info-100);
+}
+
+.gmui-background-info-500 {
+    background-color: var(--info-500);
+}
+
+.gmui-background-info-600 {
+    background-color: var(--info-600);
+}
+
+.gmui-background-black-100 {
+    background-color: var(--black-100);
+}
+
+.gmui-background-black-500 {
+    background-color: var(--black-500);
+}
+
+.gmui-background-black-600 {
+    background-color: var(--black-600);
+}
+
+.gmui-background-black-700 {
+    background-color: var(--black-700);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans SC', sans-serif, Arial;
+}
+
+small {
+    font-size: 14px;
+}
+
+h6,
+body,
+p {
+    font-size: 16px;
+}
+
+h5,
+.gmui-title {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1,
+.gmui-large-title {
+    font-size: 32px;
+}
+
+.gmui-font-weight-250 {
+    font-weight: 250;
+}
+
+.gmui-font-weight-300 {
+    font-weight: 300;
+}
+
+.gmui-font-weight-350 {
+    font-weight: 350;
+}
+
+.gmui-font-weight-400 {
+    font-weight: 400;
+}
+
+.gmui-font-weight-500 {
+    font-weight: 500;
+}
+
+.gmui-font-weight-700 {
+    font-weight: 700;
+}
+
+.gmui-font-weight-900 {
+    font-weight: 900;
+}
+
+::selection {
+    color: #FFF;
+    background: var(--info-500);
+}
+
+.gmui-border-radius-100 {
+    border-radius: 100%;
+}

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Material UI Design Kit</title>
+    <link rel="shortcut icon" href="kit/img/logo-view_r.svg" type="image/x-icon">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://gfont.cdn.wepublish.cn/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./kit/main.css">
+    <!-- <link rel="stylesheet" href="./kit/fonts/fonts.css"> -->
+    <link rel="stylesheet" href="./kit/docs-view.css">
+    <link rel="stylesheet" href="./kit/typo/Typo.css">
+    <link rel="stylesheet" href="./kit/Avatars/Avatars.css">
+    <link rel="stylesheet" href="./kit/Tag_Badges/Tag_Badges.css">
+    <link rel="stylesheet" href="./kit/Breadcrumb/Breadcrumb.css">
+    <link rel="stylesheet" href="./kit/Button/Button.css">
+    <link rel="stylesheet" href="./kit/Loading/Loading.css">
+</head>
+
+<body style="overflow: hidden;">
+    <script src="./kit/Loading/js/Loading.js"></script>
+    <div id="gmui-loading" class="gmui-loading-box">
+        <div class="gmui-loading"></div>
+        <div class="gmui-loading-animation"></div>
+        <div class="gmui-loading-progress-bar" style="display: none;"><span class="gmui-loading-progress-bar-content"></span></div>
+    </div>
+
+    <div class="gmui-view-color">
+        <div class="gmui-large-title">配色</div>
+        <div class="gmui-view-color-box">
+            <div class="gmui-view-color-item">
+                <div class="gmui-view-color-item-card" style="background-color: var(--primary-100); color: #000;">
+                    <top>primary-100</top>
+                    <bottom>#CCE5FF</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--primary-500); color: #fff;">
+                    <top>primary-500</top>
+                    <bottom>#007CFF</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--primary-600); color: #fff;">
+                    <top>primary-600</top>
+                    <bottom>
+                        <p>text</p>
+                        #0063cc
+                    </bottom>
+                </div>
+            </div>
+            <div class="gmui-view-color-item">
+                <div class="gmui-view-color-item-card" style="background-color: var(--primary-2-100); color: #000;">
+                    <top>primary-2-100</top>
+                    <bottom>#E5E6FE</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--primary-2-500); color: #fff;">
+                    <top>primary-2-500</top>
+                    <bottom>#7C84FC</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--primary-2-600); color: #fff;">
+                    <top>primary-2-600</top>
+                    <bottom>
+                        <p>text</p>
+                        #636aca
+                    </bottom>
+                </div>
+            </div>
+            <div class="gmui-view-color-item">
+                <div class="gmui-view-color-item-card" style="background-color: var(--success-100); color: #000;">
+                    <top>success-100</top>
+                    <bottom>#CCF8E0</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--success-500); color: #fff;">
+                    <top>success-500</top>
+                    <bottom>#00db66</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--success-600); color: #fff;">
+                    <top>success-600</top>
+                    <bottom>
+                        <p>text</p>
+                        #00af52
+                    </bottom>
+                </div>
+            </div>
+            <div class="gmui-view-color-item">
+                <div class="gmui-view-color-item-card" style="background-color: var(--warning-100); color: #000;">
+                    <top>warning-100</top>
+                    <bottom>#fff2cc</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--warning-500); color: #fff;">
+                    <top>warning-500</top>
+                    <bottom>#ffbd00</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--warning-600); color: #fff;">
+                    <top>warning-600</top>
+                    <bottom>
+                        <p>text</p>
+                        #cc9700
+                    </bottom>
+                </div>
+            </div>
+            <div class="gmui-view-color-item">
+                <div class="gmui-view-color-item-card" style="background-color: var(--danger-100); color: #000;">
+                    <top>danger-100</top>
+                    <bottom>#ffdcdc</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--danger-500); color: #fff;">
+                    <top>danger-500</top>
+                    <bottom>#ff514f</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--danger-600); color: #fff;">
+                    <top>danger-600</top>
+                    <bottom>
+                        <p>text</p>
+                        #cc413f
+                    </bottom>
+                </div>
+            </div>
+            <div class="gmui-view-color-item">
+                <div class="gmui-view-color-item-card" style="background-color: var(--info-100); color: #000;">
+                    <top>info-100</top>
+                    <bottom>#CCF6F4</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--info-500); color: #fff;">
+                    <top>info-500</top>
+                    <bottom>#00D2C6</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--info-600); color: #fff;">
+                    <top>info-600</top>
+                    <bottom>
+                        <p>text</p>
+                        #00a89e
+                    </bottom>
+                </div>
+            </div>
+            <div class="gmui-view-color-item">
+                <div class="gmui-view-color-item-card" style="background-color: var(--black-100); color: #000;">
+                    <top>black-100</top>
+                    <bottom>#D9DADD</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--black-500); color: #fff;">
+                    <top>black-500</top>
+                    <bottom>#3F4756</bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--black-600); color: #fff;">
+                    <top>black-600</top>
+                    <bottom>
+                        <p>text</p>
+                        #323945
+                    </bottom>
+                </div>
+                <div class="gmui-view-color-item-card" style="background-color: var(--black-700); color: #fff;">
+                    <top>black-700</top>
+                    <bottom>
+                        <p>dark-themes-background</p>
+                        #303030
+                    </bottom>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gmui-view-typo">
+        <div class="gmui-large-title">字体排版</div>
+        <div class="gmui-view-typo-box gmui-font-weight-250">
+            <div class="gmui-typo-large-title">FontWeight / <a
+                    class="gmui-font-weight-250">ExtraLight<small>（250）</small></a></div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 14px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">Small</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 14px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 16px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H6 / Body / p</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 16px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 18px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H5 / Header / Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 18px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 20px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H4</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 20px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 22px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H3</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 22px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 24px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H2</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 24px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 32px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H1 / Large Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 32px</div>
+            </div>
+        </div>
+
+        <div class="gmui-view-typo-box gmui-font-weight-350">
+            <div class="gmui-typo-large-title">FontWeight / <a
+                    class="gmui-font-weight-350">Normal<small>（350）</small></a></div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 14px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">Small</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 14px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 16px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H6 / Body / p</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 16px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 18px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H5 / Header / Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 18px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 20px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H4</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 20px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 22px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H3</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 22px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 24px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H2</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 24px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 32px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H1 / Large Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 32px</div>
+            </div>
+        </div>
+
+        <div class="gmui-view-typo-box gmui-font-weight-500">
+            <div class="gmui-typo-large-title">FontWeight / <a
+                    class="gmui-font-weight-500">Medium<small>（500）</small></a></div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 14px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">Small</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 14px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 16px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H6 / Body / p</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 16px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 18px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H5 / Header / Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 18px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 20px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H4</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 20px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 22px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H3</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 22px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 24px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H2</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 24px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 32px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H1 / Large Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 32px</div>
+            </div>
+        </div>
+
+        <div class="gmui-view-typo-box gmui-font-weight-900">
+            <div class="gmui-typo-large-title">FontWeight / <a
+                    class="gmui-font-weight-900">Heavy<small>（900）</small></a></div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 14px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">Small</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 14px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 16px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H6 / Body / p</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 16px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 18px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H5 / Header / Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 18px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 20px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H4</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 20px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 22px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H3</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 22px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 24px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H2</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 24px</div>
+            </div>
+            <div class="gmui-view-typo-item">
+                <div class="gmui-view-typo-item-fontsize-view" style="font-size: 32px;">View Design UI</div>
+                <div class="gmui-view-typo-item-size">H1 / Large Title</div>
+                <div class="gmui-view-typo-item-fontsize">FontSize 32px</div>
+            </div>
+        </div>
+        <h2 class="gmui-font-weight-350">内联文本样式</h2>
+        <div style="line-height: 32px;margin-left: 24px;">
+            <p><a href="javascript:;" type="gmui-typo">这是一个链接</a></p>
+            <p>使用 mark 标签来<mark>高亮文本</mark>。</p>
+            <p><del>这行文本被视为已删除文本。</del></p>
+            <p><u>这行文本带有下划线。</u></p>
+            <p><small>这行文本字体被缩小了。</small></p>
+            <p><strong>这行文本被加粗了。</strong></p>
+            <p><em>这段文本是斜体的。</em></p>
+            <p>按下 <kbd>Esc</kbd> 可以关闭对话框</p>
+        </div>
+        <h2 class="gmui-font-weight-350">引用</h2>
+        <div style="margin-left: 24px;">
+            <blockquote>
+                <p>古之立大事者，不惟有超世之才，亦必有坚韧不拔之志。</p>
+                <footer>苏轼--《晁错论》</footer>
+            </blockquote>
+        </div>
+        <link rel="stylesheet" href="./kit/typo/vendor/highlight/styles/vscode.min.css">
+        <script src="./kit/typo/vendor/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <h2 class="gmui-font-weight-350">代码块</h2>
+        <div style="margin-left: 24px;">
+            <pre><code class="language-html">&lt;div class="gmui-view-typo-item-fontsize-view" style="font-size: 14px;"&gt;View Design UI&lt;/div&gt;
+<br>&lt;div class="gmui-view-typo-item-size"&gt;Small&lt;/div&gt;
+<br>&lt;div class="gmui-view-typo-item-fontsize"&gt;FontSize 14px&lt;/div&gt;</code></pre>
+            <pre class="gmui-pre-shadow"><code class="language-html">&lt;div class="gmui-view-typo-item-fontsize-view" style="font-size: 14px;"&gt;View Design UI&lt;/div&gt;
+<br>&lt;div class="gmui-view-typo-item-size"&gt;Small&lt;/div&gt;
+<br>&lt;div class="gmui-view-typo-item-fontsize"&gt;FontSize 14px&lt;/div&gt;</code></pre>
+        </div>
+    </div>
+    <div class="gmui-view-avatars">
+        <div class="gmui-large-title">Avatars 头像</div>
+        <div class="gmui-view-avatars-box">
+            <a class="gmui-avatars-item">
+                <i class="gmui-avatars">
+                    <img src="./kit/Avatars/images/Avatars-default.svg" alt="">
+                </i>
+            </a>
+        </div>
+        <div class="gmui-view-avatars-box">
+            <a class="gmui-avatars-item">
+                <i class="gmui-avatars gmui-border-radius-100">
+                    <img src="./kit/Avatars/images/Avatars-default.svg" alt="">
+                </i>
+            </a>
+            <a class="gmui-avatars-item" href="https://www.w3.org/" target="_blank">
+                <i class="gmui-avatars gmui-border-radius-100">
+                    <img src="./kit/Avatars/images/Avatars-default.svg" alt="">
+                </i>
+            </a>
+        </div>
+        <div class="gmui-view-avatars-box">
+            <a class="gmui-avatars-item">
+                <i class="gmui-avatars gmui-border-radius-100">
+                    <span class="gmui-background-warning-500"></span>
+                    <center style="color: #fff;">VD</center>
+                </i>
+            </a>
+            <a class="gmui-avatars-item">
+                <i class="gmui-avatars gmui-border-radius-100">
+                    <span class="gmui-background-warning-100"></span>
+                    <center style="color: var(--warning-500);">VD</center>
+                </i>
+            </a>
+            <a class="gmui-avatars-item">
+                <i class="gmui-avatars gmui-border-radius-100">
+                    <span class="gmui-background-warning-500"></span>
+                    <center style="color: #fff;">VD</center>
+                </i>
+                <span class="gmui-avatars-state-online"></span>
+            </a>
+            <a class="gmui-avatars-item">
+                <i class="gmui-avatars gmui-border-radius-100">
+                    <span class="gmui-background-primary-100"></span>
+                    <center style="color: var(--primary-500);">VD</center>
+                </i>
+                <span class="gmui-avatars-state-online-busy"></span>
+            </a>
+            <a class="gmui-avatars-item">
+                <i class="gmui-avatars gmui-border-radius-100">
+                    <span class="gmui-background-warning-500"></span>
+                    <center style="color: #fff;">VD</center>
+                </i>
+                <span class="gmui-avatars-state-offline"></span>
+            </a>
+        </div>
+        <div class="gmui-view-avatars-box">
+            <span class="gmui-avatars-groups">
+                <a class="gmui-avatars-item">
+                    <i class="gmui-avatars gmui-border-radius-100">
+                        <img src="./kit/Avatars/images/Avatars-example-1_512w.png" alt="">
+                    </i>
+                </a>
+                <a class="gmui-avatars-item">
+                    <i class="gmui-avatars gmui-border-radius-100">
+                        <img src="./kit/Avatars/images/Avatars-example-2_512w.png" alt="">
+                    </i>
+                </a>
+                <a class="gmui-avatars-item">
+                    <i class="gmui-avatars gmui-border-radius-100">
+                        <img src="./kit/Avatars/images/Avatars-example-3_512w.png" alt="">
+                    </i>
+                </a>
+                <a class="gmui-avatars-item">
+                    <i class="gmui-avatars gmui-border-radius-100">
+                        <img src="./kit/Avatars/images/Avatars-example-4_512w.png" alt="">
+                    </i>
+                </a>
+                <a class="gmui-avatars-item">
+                    <i class="gmui-avatars gmui-border-radius-100">
+                        <span class="gmui-background-warning-100"></span>
+                        <center style="color: var(--warning-500);">+3</center>
+                    </i>
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="gmui-view-tag_badges">
+        <div class="gmui-large-title">Tags / Badges 标记</div>
+        <div class="gmui-view-tag_badges-box">
+            <span class="gmui-tag_badges-item gmui-background-primary-100"
+                style="color: var(--primary-600)">DEFAULT</span>
+            <span class="gmui-tag_badges-item gmui-background-success-100"
+                style="color: var(--success-600)">SUCCESS</span>
+            <span class="gmui-tag_badges-item gmui-background-warning-100"
+                style="color: var(--warning-600)">WARNING</span>
+            <span class="gmui-tag_badges-item gmui-background-danger-100" style="color: var(--danger-600)">DANGER</span>
+            <span class="gmui-tag_badges-item gmui-background-primary-2-100"
+                style="color: var(--primary-2-600)">PRIMARY</span>
+            <span class="gmui-tag_badges-item gmui-background-info-100" style="color: var(--info-600)">INFO</span>
+            <span class="gmui-tag_badges-item gmui-background-black-100" style="color: var(--black-600)">DEFAULT</span>
+        </div>
+        <div class="gmui-view-tag_badges-box">
+            <span class="gmui-tag_badges-item gmui-background-primary-500">DEFAULT</span>
+            <span class="gmui-tag_badges-item gmui-background-success-500">SUCCESS</span>
+            <span class="gmui-tag_badges-item gmui-background-warning-500">WARNING</span>
+            <span class="gmui-tag_badges-item gmui-background-danger-500">DANGER</span>
+            <span class="gmui-tag_badges-item gmui-background-primary-2-500">PRIMARY</span>
+            <span class="gmui-tag_badges-item gmui-background-info-500">INFO</span>
+            <span class="gmui-tag_badges-item gmui-background-black-500">DEFAULT</span>
+        </div>
+        <div class="gmui-view-tag_badges-box">
+            <span class="gmui-tag_badges-item tag_badges-border">DEFAULT</span>
+        </div>
+
+        <script src="./kit/Tag_Badges/js/main.js"></script>
+        <div class="gmui-view-tag_badges-box">
+            <button class="gmui-view-tag_badges-button">消息
+                <span class="gmui-tag_badges-badges"></span>
+            </button>
+            <p>button在父容器添加position:relative;</p>
+        </div>
+        <div class="gmui-view-tag_badges-box">
+            <button class="gmui-view-tag_badges-button">消息
+                <span class="gmui-tag_badges-badges" contenteditable="true">99+</span>
+            </button>
+            <p>button在父容器添加position:relative;<small>将contenteditable="true"删掉则不能编辑</small></p>
+        </div>
+    </div>
+    <div class="gmui-view-breadcrumb">
+        <div class="gmui-large-title">Breadcrumb 面包屑</div>
+        <div class="gmui-view-breadcrumb-box">
+            <div class="gmui-breadcrumb">
+                <a href="javascript:;" class="gmui-breadcrumb-item">首页</a>
+                <a href="javascript:;" class="gmui-breadcrumb-item">组件</a>
+                <a href="javascript:;" class="gmui-breadcrumb-item">面包屑</a>
+                <span class="gmui-breadcrumb-item">当前页</span>
+            </div>
+            <div class="gmui-breadcrumb gmui-breadcrumb-pointer">
+                <a href="javascript:;" class="gmui-breadcrumb-item">首页</a>
+                <a href="javascript:;" class="gmui-breadcrumb-item">组件</a>
+                <a href="javascript:;" class="gmui-breadcrumb-item">面包屑</a>
+                <span class="gmui-breadcrumb-item">当前页</span>
+            </div>
+        </div>
+    </div>
+    <div class="gmui-view-button">
+        <div class="gmui-large-title">button 按钮</div>
+        <div class="gmui-view-button-box">
+            <h4>Default</h4>
+            <div class="gmui-view-button-item" style="margin:unset;">
+                <a class="gmui-button">Default</a>
+                <div class="gmui-view-button-item"
+                    style="border-radius: 8px;background: #303030;padding: 18px 18px;display: inline-flex;margin: unset;">
+                    <a class="gmui-button gmui-button-unsetbg-dark" style="margin: unset;">dark</a>
+                </div>
+                <a class="gmui-button gmui-button-unsetbg-primary">Default</a>
+                <a class="gmui-button gmui-button-unsetbg-primary-2">Default</a>
+                <a class="gmui-button gmui-button-unsetbg-info">info</a>
+                <a class="gmui-button gmui-button-unsetbg-success">success</a>
+                <a class="gmui-button gmui-button-unsetbg-warning">warning</a>
+                <a class="gmui-button gmui-button-unsetbg-danger">danger</a>
+            </div>
+            <div class="gmui-view-button-item" style="margin-top: 0;">
+                <a class="gmui-button gmui-button-light gmui-button-shadow-style1">Light</a>
+                <div class="gmui-view-button-item"
+                    style="border-radius: 8px;background: #303030;padding: 18px 18px;display: inline-flex;margin: unset;">
+                    <a class="gmui-button gmui-button-dark gmui-button-shadow-style1" style="margin: unset;">dark</a>
+                </div>
+                <a class="gmui-button gmui-button-primary gmui-button-shadow-style1">Default</a>
+                <a class="gmui-button gmui-button-primary-2 gmui-button-shadow-style1">Default</a>
+                <a class="gmui-button gmui-button-black gmui-button-shadow-style1">black</a>
+                <a class="gmui-button gmui-button-info gmui-button-shadow-style1">info</a>
+                <a class="gmui-button gmui-button-success gmui-button-shadow-style1">success</a>
+                <a class="gmui-button gmui-button-warning gmui-button-shadow-style1">warning</a>
+                <a class="gmui-button gmui-button-danger gmui-button-shadow-style1">danger</a>
+            </div>
+            <h4>Disabled</h4>
+            <div class="gmui-view-button-item">
+                <a class="gmui-button gmui-button-light gmui-button-shadow-style1" disabled>Light</a>
+                <div class="gmui-view-button-item"
+                    style="border-radius: 8px;background: #303030;padding: 18px 18px;display: inline-flex;margin: unset;">
+                    <a class="gmui-button gmui-button-dark gmui-button-shadow-style1" style="margin: unset;"
+                        disabled>dark</a>
+                </div>
+                <a class="gmui-button gmui-button-primary gmui-button-shadow-style1" disabled>Default</a>
+                <a class="gmui-button gmui-button-primary-2 gmui-button-shadow-style1" disabled>Default</a>
+                <a class="gmui-button gmui-button-black gmui-button-shadow-style1" disabled>black</a>
+                <a class="gmui-button gmui-button-info gmui-button-shadow-style1" disabled>info</a>
+                <a class="gmui-button gmui-button-success gmui-button-shadow-style1" disabled>success</a>
+                <a class="gmui-button gmui-button-warning gmui-button-shadow-style1" disabled>warning</a>
+                <a class="gmui-button gmui-button-danger gmui-button-shadow-style1" disabled>danger</a>
+            </div>
+            <div class="gmui-view-button-item">
+                <a class="gmui-button gmui-button-br-fill gmui-button-shadow-style2">Default<svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none"
+                        version="1.1" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                            <clipPath id="master_svg0_121_7972">
+                                <rect x="20" y="0" width="20" height="20" rx="0" />
+                            </clipPath>
+                        </defs>
+                        <g style="mix-blend-mode:passthrough" transform="matrix(0,1,-1,0,20,-20)">
+                            <g style="mix-blend-mode:passthrough">
+                                <path
+                                    d="M29.4104178125,3.5770858125C29.7358578125,3.2516486125,30.2634878125,3.2516486125,30.5889378125,3.5770858125C30.5889378125,3.5770858125,36.4222078125,9.4104178125,36.4222078125,9.4104178125C36.747707812499996,9.7358578125,36.747707812499996,10.2634878125,36.4222078125,10.5889378125C36.0968078125,10.9143678125,35.5692078125,10.9143678125,35.2438078125,10.5889378125C35.2438078125,10.5889378125,30.8330078125,6.1781878125,30.8330078125,6.1781878125C30.8330078125,6.1781878125,30.8330078125,15.8330078125,30.8330078125,15.8330078125C30.8330078125,16.2933078125,30.4599078125,16.6663078125,29.9996778125,16.6663078125C29.5394378125,16.6663078125,29.1663378125,16.2933078125,29.1663378125,15.8330078125C29.1663378125,15.8330078125,29.1663378125,6.1781878125,29.1663378125,6.1781878125C29.1663378125,6.1781878125,24.7555978125,10.5889378125,24.7555978125,10.5889378125C24.4301578125,10.9143678125,23.9025218125,10.9143678125,23.5770858125,10.5889378125C23.2516486125,10.2634878125,23.2516486125,9.7358578125,23.5770858125,9.4104178125C23.5770858125,9.4104178125,29.4104178125,3.5770858125,29.4104178125,3.5770858125C29.4104178125,3.5770858125,29.4104178125,3.5770858125,29.4104178125,3.5770858125Z"
+                                    fill-rule="evenodd" class="gmui-button-br-fill-icon" fill-opacity="1" />
+                            </g>
+                        </g>
+                    </svg></a>
+            </div>
+            <div class="gmui-view-button-item">
+                <a class="gmui-button gmui-button-primary gmui-button-shadow-style1"><span>Download</span><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none"
+                        version="1.1" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                            <clipPath id="master_svg0_23_17684">
+                                <rect x="0" y="0" width="20" height="20" rx="0" />
+                            </clipPath>
+                        </defs>
+                        <g style="mix-blend-mode:passthrough">
+                            <g style="mix-blend-mode:passthrough">
+                                <path
+                                    d="M10.0003221875,1.6669921875C10.4605721875,1.6669921875,10.8336621875,2.0400881875,10.8336621875,2.5003251875C10.8336621875,2.5003251875,10.8336621875,10.4884921875,10.8336621875,10.4884921875C10.8336621875,10.4884921875,13.5776921875,7.7444021875,13.5776921875,7.7444021875C13.9031921875,7.4189621875,14.4307921875,7.4189621875,14.7561921875,7.7444021875C15.0816921875,8.0698421875,15.0816921875,8.5974721875,14.7561921875,8.9229121875C14.7561921875,8.9229121875,10.5895721875,13.0895921875,10.5895721875,13.0895921875C10.2641621875,13.4149921875,9.7365121875,13.4149921875,9.4110621875,13.0895921875C9.4110621875,13.0895921875,5.2444021875,8.9229121875,5.2444021875,8.9229121875C4.9189621875,8.5974721875,4.9189621875,8.0698421875,5.2444021875,7.7444021875C5.5698421875,7.4189621875,6.0974721875,7.4189621875,6.4229121875,7.7444021875C6.4229121875,7.7444021875,9.1669921875,10.4884921875,9.1669921875,10.4884921875C9.1669921875,10.4884921875,9.1669921875,2.5003251875,9.1669921875,2.5003251875C9.1669921875,2.0400881875,9.540082187500001,1.6669921875,10.0003221875,1.6669921875C10.0003221875,1.6669921875,10.0003221875,1.6669921875,10.0003221875,1.6669921875ZM2.5003251875,11.6669921875C2.9605621875,11.6669921875,3.3336621875,12.0400921875,3.3336621875,12.5002921875C3.3336621875,12.5002921875,3.3336621875,15.8336921875,3.3336621875,15.8336921875C3.3336621875,16.054692187500002,3.4214621875,16.2666921875,3.5777321875,16.4228921875C3.7340121875,16.5791921875,3.9459721875,16.6669921875,4.1669921875,16.6669921875C4.1669921875,16.6669921875,15.8336921875,16.6669921875,15.8336921875,16.6669921875C16.054692187500002,16.6669921875,16.2666921875,16.5791921875,16.4228921875,16.4228921875C16.5791921875,16.2666921875,16.6669921875,16.054692187500002,16.6669921875,15.8336921875C16.6669921875,15.8336921875,16.6669921875,12.5002921875,16.6669921875,12.5002921875C16.6669921875,12.0400921875,17.0400921875,11.6669921875,17.5002921875,11.6669921875C17.9605921875,11.6669921875,18.3336921875,12.0400921875,18.3336921875,12.5002921875C18.3336921875,12.5002921875,18.3336921875,15.8336921875,18.3336921875,15.8336921875C18.3336921875,16.496692187500003,18.0701921875,17.132592187500002,17.6013921875,17.6013921875C17.132592187500002,18.0701921875,16.496692187500003,18.3336921875,15.8336921875,18.3336921875C15.8336921875,18.3336921875,4.1669921875,18.3336921875,4.1669921875,18.3336921875C3.5039521875,18.3336921875,2.8680621875,18.0701921875,2.3992251875,17.6013921875C1.9303841875,17.132592187500002,1.6669921875,16.496692187500003,1.6669921875,15.8336921875C1.6669921875,15.8336921875,1.6669921875,12.5002921875,1.6669921875,12.5002921875C1.6669921875,12.0400921875,2.0400881875,11.6669921875,2.5003251875,11.6669921875C2.5003251875,11.6669921875,2.5003251875,11.6669921875,2.5003251875,11.6669921875Z"
+                                    fill-rule="evenodd" fill="#FFFFFF" fill-opacity="1" />
+                            </g>
+                        </g>
+                    </svg></a>
+            </div>
+            <div class="gmui-view-button-item">
+                <a class="gmui-button gmui-button-primary gmui-button-shadow-style1"><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none"
+                        version="1.1" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                            <clipPath id="master_svg0_23_17684">
+                                <rect x="0" y="0" width="20" height="20" rx="0" />
+                            </clipPath>
+                        </defs>
+                        <g style="mix-blend-mode:passthrough">
+                            <g style="mix-blend-mode:passthrough">
+                                <path
+                                    d="M10.0003221875,1.6669921875C10.4605721875,1.6669921875,10.8336621875,2.0400881875,10.8336621875,2.5003251875C10.8336621875,2.5003251875,10.8336621875,10.4884921875,10.8336621875,10.4884921875C10.8336621875,10.4884921875,13.5776921875,7.7444021875,13.5776921875,7.7444021875C13.9031921875,7.4189621875,14.4307921875,7.4189621875,14.7561921875,7.7444021875C15.0816921875,8.0698421875,15.0816921875,8.5974721875,14.7561921875,8.9229121875C14.7561921875,8.9229121875,10.5895721875,13.0895921875,10.5895721875,13.0895921875C10.2641621875,13.4149921875,9.7365121875,13.4149921875,9.4110621875,13.0895921875C9.4110621875,13.0895921875,5.2444021875,8.9229121875,5.2444021875,8.9229121875C4.9189621875,8.5974721875,4.9189621875,8.0698421875,5.2444021875,7.7444021875C5.5698421875,7.4189621875,6.0974721875,7.4189621875,6.4229121875,7.7444021875C6.4229121875,7.7444021875,9.1669921875,10.4884921875,9.1669921875,10.4884921875C9.1669921875,10.4884921875,9.1669921875,2.5003251875,9.1669921875,2.5003251875C9.1669921875,2.0400881875,9.540082187500001,1.6669921875,10.0003221875,1.6669921875C10.0003221875,1.6669921875,10.0003221875,1.6669921875,10.0003221875,1.6669921875ZM2.5003251875,11.6669921875C2.9605621875,11.6669921875,3.3336621875,12.0400921875,3.3336621875,12.5002921875C3.3336621875,12.5002921875,3.3336621875,15.8336921875,3.3336621875,15.8336921875C3.3336621875,16.054692187500002,3.4214621875,16.2666921875,3.5777321875,16.4228921875C3.7340121875,16.5791921875,3.9459721875,16.6669921875,4.1669921875,16.6669921875C4.1669921875,16.6669921875,15.8336921875,16.6669921875,15.8336921875,16.6669921875C16.054692187500002,16.6669921875,16.2666921875,16.5791921875,16.4228921875,16.4228921875C16.5791921875,16.2666921875,16.6669921875,16.054692187500002,16.6669921875,15.8336921875C16.6669921875,15.8336921875,16.6669921875,12.5002921875,16.6669921875,12.5002921875C16.6669921875,12.0400921875,17.0400921875,11.6669921875,17.5002921875,11.6669921875C17.9605921875,11.6669921875,18.3336921875,12.0400921875,18.3336921875,12.5002921875C18.3336921875,12.5002921875,18.3336921875,15.8336921875,18.3336921875,15.8336921875C18.3336921875,16.496692187500003,18.0701921875,17.132592187500002,17.6013921875,17.6013921875C17.132592187500002,18.0701921875,16.496692187500003,18.3336921875,15.8336921875,18.3336921875C15.8336921875,18.3336921875,4.1669921875,18.3336921875,4.1669921875,18.3336921875C3.5039521875,18.3336921875,2.8680621875,18.0701921875,2.3992251875,17.6013921875C1.9303841875,17.132592187500002,1.6669921875,16.496692187500003,1.6669921875,15.8336921875C1.6669921875,15.8336921875,1.6669921875,12.5002921875,1.6669921875,12.5002921875C1.6669921875,12.0400921875,2.0400881875,11.6669921875,2.5003251875,11.6669921875C2.5003251875,11.6669921875,2.5003251875,11.6669921875,2.5003251875,11.6669921875Z"
+                                    fill-rule="evenodd" fill="#FFFFFF" fill-opacity="1" />
+                            </g>
+                        </g>
+                    </svg></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</body>
+</html>
