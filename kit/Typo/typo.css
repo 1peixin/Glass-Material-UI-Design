@@ -62,15 +62,27 @@ kbd {
 }
 
 blockquote {
+    position: relative;
     margin: 1em 3em 1em 2em;
     padding-left: 18px;
     font-weight: 400;
-    border-left: 6px solid rgba(0, 0, 0, .12);
+    border-left: 6px solid transparent;
     line-height: 32px;
 }
 
+blockquote::after {
+    width: 6px;
+    height: 100%;
+    content: '';
+    background: linear-gradient(175deg, rgba(255,81,79,0.60) 0%, rgba(255,189,0,0.50) 100%);
+    position: absolute;
+    left: -6px;
+    top: 0;
+    border-radius: 200px;
+}
+
 blockquote p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: rgba(61, 61, 61, 1);
     line-height: 24px;
@@ -78,7 +90,7 @@ blockquote p {
 
 blockquote footer {
     color: rgba(0, 0, 0, 0.48);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
 }
 
